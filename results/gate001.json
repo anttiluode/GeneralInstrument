@@ -5,7 +5,7 @@
     "rms": 0.6,
     "peak": 1.2,
     "rounds": 3,
-    "seeds": 120,
+    "seeds": 144,
     "models": 36,
     "groups": [
       "linear",
@@ -18,180 +18,188 @@
   "probes": [
     {
       "name": "constant",
-      "priorEIG": 0.33527553459762593
+      "priorEIG": 0.31232716642483105
     },
     {
       "name": "square-4",
-      "priorEIG": 0.007570168550835588
+      "priorEIG": 0.00589748118765443
     },
     {
       "name": "square-8",
-      "priorEIG": 0.05214372572473991
+      "priorEIG": 0.044123003690944795
     },
     {
       "name": "square-16",
-      "priorEIG": 0.16874421402577466
+      "priorEIG": 0.1595730193430125
     },
     {
       "name": "square-40",
-      "priorEIG": 0.39836254381597314
+      "priorEIG": 0.4123594533732897
     },
     {
       "name": "square-80",
-      "priorEIG": 0.4510542105211841
+      "priorEIG": 0.4081742204843549
     },
     {
       "name": "bias-0",
-      "priorEIG": 0.296830936550194
+      "priorEIG": 0.29625176680431253
     },
     {
       "name": "bias-0.5",
-      "priorEIG": 0.7430767672106349
+      "priorEIG": 0.7351658510544063
     },
     {
       "name": "bias-1",
-      "priorEIG": 0.6729704262441703
+      "priorEIG": 0.6720375574847058
     },
     {
       "name": "burst",
-      "priorEIG": 0.9077806217920319
+      "priorEIG": 0.919007068229803
     }
   ],
   "twinError": 0,
   "totals": {
     "constant": {
-      "correct": 18,
-      "wrong": 0,
-      "abstained": 102,
-      "nll": 0.7724456420444875,
+      "correct": 19,
+      "wrong": 1,
+      "abstained": 124,
+      "nll": 0.8362451526451182,
       "lateTwinMaxGap": 0,
       "first": {
-        "constant": 120
+        "constant": 144
+      },
+      "byRound": [
+        {
+          "correct": 10,
+          "wrong": 0,
+          "abstained": 134
+        },
+        {
+          "correct": 16,
+          "wrong": 1,
+          "abstained": 127
+        },
+        {
+          "correct": 19,
+          "wrong": 1,
+          "abstained": 124
+        }
+      ]
+    },
+    "fixed-ranked": {
+      "correct": 120,
+      "wrong": 1,
+      "abstained": 23,
+      "nll": 0.09811919972068134,
+      "lateTwinMaxGap": 0,
+      "first": {
+        "burst": 144
+      },
+      "byRound": [
+        {
+          "correct": 49,
+          "wrong": 0,
+          "abstained": 95
+        },
+        {
+          "correct": 90,
+          "wrong": 0,
+          "abstained": 54
+        },
+        {
+          "correct": 120,
+          "wrong": 1,
+          "abstained": 23
+        }
+      ]
+    },
+    "random": {
+      "correct": 57,
+      "wrong": 2,
+      "abstained": 85,
+      "nll": 0.4782203729829742,
+      "lateTwinMaxGap": 0,
+      "first": {
+        "square-40": 20,
+        "bias-0.5": 18,
+        "burst": 10,
+        "square-8": 16,
+        "square-4": 13,
+        "constant": 18,
+        "bias-1": 11,
+        "square-80": 6,
+        "square-16": 17,
+        "bias-0": 15
       },
       "byRound": [
         {
           "correct": 12,
           "wrong": 0,
-          "abstained": 108
+          "abstained": 132
         },
         {
-          "correct": 15,
+          "correct": 41,
           "wrong": 0,
-          "abstained": 105
+          "abstained": 103
         },
         {
-          "correct": 18,
-          "wrong": 0,
-          "abstained": 102
-        }
-      ]
-    },
-    "fixed-ranked": {
-      "correct": 95,
-      "wrong": 1,
-      "abstained": 24,
-      "nll": 0.12500567138299143,
-      "lateTwinMaxGap": 0,
-      "first": {
-        "burst": 120
-      },
-      "byRound": [
-        {
-          "correct": 42,
-          "wrong": 3,
-          "abstained": 75
-        },
-        {
-          "correct": 66,
-          "wrong": 3,
-          "abstained": 51
-        },
-        {
-          "correct": 95,
-          "wrong": 1,
-          "abstained": 24
-        }
-      ]
-    },
-    "random": {
-      "correct": 38,
-      "wrong": 0,
-      "abstained": 82,
-      "nll": 0.49743198217547036,
-      "lateTwinMaxGap": 0,
-      "first": {
-        "square-16": 91,
-        "square-40": 29
-      },
-      "byRound": [
-        {
-          "correct": 1,
-          "wrong": 0,
-          "abstained": 119
-        },
-        {
-          "correct": 19,
-          "wrong": 0,
-          "abstained": 101
-        },
-        {
-          "correct": 38,
-          "wrong": 0,
-          "abstained": 82
+          "correct": 57,
+          "wrong": 2,
+          "abstained": 85
         }
       ]
     },
     "pair": {
-      "correct": 118,
+      "correct": 139,
       "wrong": 0,
-      "abstained": 2,
-      "nll": 0.014756078633654414,
+      "abstained": 5,
+      "nll": 0.025362483160787864,
       "lateTwinMaxGap": 0,
       "first": {
-        "burst": 120
+        "burst": 144
       },
       "byRound": [
         {
-          "correct": 42,
-          "wrong": 3,
-          "abstained": 75
+          "correct": 49,
+          "wrong": 0,
+          "abstained": 95
         },
         {
-          "correct": 99,
+          "correct": 120,
           "wrong": 0,
-          "abstained": 21
+          "abstained": 24
         },
         {
-          "correct": 118,
+          "correct": 139,
           "wrong": 0,
-          "abstained": 2
+          "abstained": 5
         }
       ]
     },
     "EIG": {
-      "correct": 117,
+      "correct": 139,
       "wrong": 0,
-      "abstained": 3,
-      "nll": 0.031122558506011682,
+      "abstained": 5,
+      "nll": 0.02573346000518506,
       "lateTwinMaxGap": 0,
       "first": {
-        "burst": 120
+        "burst": 144
       },
       "byRound": [
         {
-          "correct": 42,
-          "wrong": 3,
-          "abstained": 75
+          "correct": 49,
+          "wrong": 0,
+          "abstained": 95
         },
         {
-          "correct": 99,
+          "correct": 121,
           "wrong": 0,
-          "abstained": 21
+          "abstained": 23
         },
         {
-          "correct": 117,
+          "correct": 139,
           "wrong": 0,
-          "abstained": 3
+          "abstained": 5
         }
       ]
     }
