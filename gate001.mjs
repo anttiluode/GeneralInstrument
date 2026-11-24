@@ -1,7 +1,7 @@
 // General Instrument — Gate 001. No dependencies. Node.js >=18.
 function runGate() {
-  const N=80, sigma=.12, rms=.60, peak=1.2, rounds=3, seeds=120;
-  function rng(seed){let s=seed>>>0; return ()=>{s=(Math.imul(1664525,s)+1013904223)>>>0;return (s+.5)/4294967296}}
+  const N=80, sigma=.12, rms=.60, peak=1.2, rounds=3, seeds=144;
+  function rng(seed){let s=seed>>>0; return ()=>{s=(s+0x6D2B79F5)>>>0;let z=s;z=Math.imul(z^(z>>>15),z|1);z^=z+Math.imul(z^(z>>>7),z|61);return (((z^(z>>>14))>>>0)+.5)/4294967296}}
   function normal(r){return Math.sqrt(-2*Math.log(r()))*Math.cos(2*Math.PI*r())}
   const lp=(u,a)=>{let x=0;return u.map(v=>x=a*x+(1-a)*v)};
   const non=(u,c)=>u.map(v=>v+c*v*v*v);
